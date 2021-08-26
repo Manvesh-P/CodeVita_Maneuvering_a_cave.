@@ -1,0 +1,15 @@
+# CodeVita Maneuvering a cave.
+
+def ways(q,w):
+    if q == 1 or w == 1:
+        return 1
+    else:
+        return ways((q - 1), w) + ways(q, (w - 1)) 
+
+T = int(input("Enter the number of test cases:"))
+
+for i in range(0, T):
+    M,N = map(int,input("Enter the rows and columns:").split(" "))
+    
+res = ways(M,N)
+print(res)
