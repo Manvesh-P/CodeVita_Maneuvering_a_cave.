@@ -11,5 +11,5 @@ T = int(input("Enter the number of test cases:"))
 for i in range(0, T):
     M,N = map(int,input("Enter the rows and columns:").split(" "))
     
-res = ways(M,N)
-print(res)
+    res = ways(M,N)
+    print(res)
